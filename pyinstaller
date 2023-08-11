@@ -1,0 +1,4 @@
+import pysilenttask
+
+if __name__ == '__main__':
+    pysilenttask.main()

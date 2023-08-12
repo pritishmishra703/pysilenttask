@@ -1,3 +1,6 @@
 */__pycache__/*
 tmp.txt
 tasks.csv
+build/
+dist/
+pysilenttask.egg-info/

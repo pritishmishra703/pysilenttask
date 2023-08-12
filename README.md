@@ -1,6 +1,5 @@
 # PySilentTask
 
-**Description:**
 Effortlessly create and manage background-running Python scripts using PySilentTask. This command-line tool provides a convenient way to handle tasks, making it easy to create, list, and terminate them while keeping track of their execution.
 
 **Table of Contents:**
@@ -11,20 +10,23 @@ Effortlessly create and manage background-running Python scripts using PySilentT
 - [Contributing](#contributing)
 - [License](#license)
 
-**Installation:**
+## Installation
+
 Install PySilentTask using pip:
 ```
 pip install pysilenttask
 ```
 
-**Usage:**
+## Usage
+
 Use the following command to interact with PySilentTask through the command line:
 
 ```
 pysilenttask <command> [options]
 ```
 
-**Examples:**
+## Examples
+
 - Create a new task using a Python script:
   ```
   pysilenttask create-task path/to/script.py task_name
@@ -44,14 +46,6 @@ pysilenttask <command> [options]
   ```
   pysilenttask --help
   ```
-
-**Contributing:**
-If you'd like to contribute to this project, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and test thoroughly.
-4. Create a pull request with a detailed explanation of your changes.
 
 **License:**
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

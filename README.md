@@ -72,7 +72,7 @@ To provide a clearer understanding of how PySilentTask works, let's walk through
    Task example created with PID: 21156
    ```
 
-   The task will start running in the background, and you'll see its output on the console.
+   The task will start running in the background.
 
 3. **List Running Tasks:**
    You can list all currently running tasks using the `task-list` command:

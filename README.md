@@ -82,7 +82,7 @@ To provide a clearer understanding of how PySilentTask works, let's walk through
 
    Current running tasks:
 
-     PID   Description  Duration
+     PID   Description  Duration (sec)
      21156     example  13.615608
    ```
 

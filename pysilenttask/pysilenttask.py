@@ -15,12 +15,12 @@ def create_task(py_file_path, task_name):
     startupinfo = subprocess.STARTUPINFO()
     startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
 
-    output_file = os.path.join(SCRIPT_DIRECTORY, f"tmp.txt")
     process = subprocess.Popen(
         [sys.executable, py_file_path],
         startupinfo=startupinfo,
-        stdout=open(output_file, "w"),
-        stderr=subprocess.STDOUT
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        creationflags=subprocess.DETACHED_PROCESS
     )
 
     start_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -45,9 +45,9 @@ def task_list():
     tasks_df = pd.read_csv(TASKS_CSV)
     if len(tasks_df) > 0:
         tasks_df["Start Time"] = pd.to_datetime(tasks_df["Start Time"])
-        tasks_df["Duration"] = (datetime.now() - tasks_df["Start Time"]).dt.total_seconds()
+        tasks_df["Duration (sec)"] = (datetime.now() - tasks_df["Start Time"]).dt.total_seconds()
         print("Current running tasks:")
-        print(tasks_df[["PID", "Description", "Duration"]])
+        print(tasks_df[["PID", "Description", "Duration (sec)"]])
     else:
         print('No Running Tasks.')
 
@@ -92,7 +92,7 @@ def main():
             print("Usage:")
             print("pysilenttask create-task <py_file_path> <task_name>")
             print("pysilenttask kill-task <pid_of_task>")
-            print("pysilenttask list-tasks")
+            print("pysilenttask task-list")
             print("pysilenttask --help")
             sys.exit(0)
         

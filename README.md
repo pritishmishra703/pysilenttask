@@ -37,7 +37,7 @@ pysilenttask <command> [options]
   pysilenttask kill-task <pid>
   ```
 
-- List all active tasks. Use this to check tasks Process ID (PID):
+- List all active tasks. Use this to check task's Process ID (PID):
   ```
   pysilenttask task-list
   ```
@@ -47,5 +47,5 @@ pysilenttask <command> [options]
   pysilenttask --help
   ```
 
-**License:**
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

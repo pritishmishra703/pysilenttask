@@ -1,4 +1,4 @@
-**Project Name: PySilentTask**
+# PySilentTask
 
 **Description:**
 Effortlessly create and manage background-running Python scripts using PySilentTask. This command-line tool provides a convenient way to handle tasks, making it easy to create, list, and terminate them while keeping track of their execution.

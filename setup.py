@@ -9,7 +9,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'pysilenttask = pysilenttask:main'
+            'pysilenttask = pysilenttask.pysilenttask:main'
         ]
     },
     install_requires=[

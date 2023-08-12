@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pysilenttask',
-    version='1.2',
+    version='1.3',
     description='Effortlessly create and manage background-running Python scripts using pysilenttask.',
     author='Pritish Mishra',
     author_email='pritishjan@gmail.com',
